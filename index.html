@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santiago Cárdenas | Portafolio</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #001f3f, #000814);
+  color: #f1f5f9;
+  line-height: 1.7;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 8, 20, 0.85);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #3b82f6;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #cbd5f5;
+  font-weight: 500;
+}
+
+.nav-links a:hover { color: #60a5fa; }
+
+.hero {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 140px 40px 80px;
+}
+
+.hero img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 25px;
+  border: 3px solid #3b82f6;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 3.2em;
+  margin-bottom: 10px;
+}
+
+.hero span { color: #60a5fa; }
+
+.hero p {
+  font-size: 1.1em;
+  color: #cbd5f5;
+  margin-bottom: 25px;
+}
+
+.hero a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3b82f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+section {
+  max-width: 1100px;
+  margin: 120px auto;
+  padding: 0 40px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 2.3em;
+  margin-bottom: 40px;
+  border-left: 5px solid #3b82f6;
+  padding-left: 15px;
+}
+
+h2 span { color: #60a5fa; }
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 35px;
+  margin-bottom: 25px;
+}
+
+.card h3 {
+  color: #60a5fa;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 50px 20px;
+  color: #94a3b8;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+@media (max-width: 768px) {
+  nav { padding: 20px; }
+  h1 { font-size: 2.4em; }
+}
+</style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">SANTIAGO</div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#perfil">Perfil</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <div>
+    <img src="foto-perfil.jpg" alt="Santiago Cárdenas" />
+      <h1>Santiago <span>Cárdenas</span></h1>
+      <p>Estudiante de Ingeniería de Sistemas · Programador · Colombiano<br>Técnico en Programación — Universidad Autónoma de Bucaramanga<br>Estudiante de intercambio — IPN ESCOM</p>
+      <a href="mailto:scardenaspasachoa@gmail.com">scardenaspasachoa@gmail.com</a>
+    </div>
+  </section>
+
+  <section id="perfil">
+    <h2>Sobre <span>Mí</span></h2>
+    <div class="card">
+      <p>Soy estudiante de Ingeniería de Sistemas en la Universidad de Cundinamarca, Técnico en Programación por la Universidad Autónoma de Bucaramanga y actualmente realizo un intercambio académico en el IPN — Escuela Superior de Cómputo (ESCOM). Me interesa la programación, las redes de computadoras y el desarrollo de proyectos con impacto social y ambiental.</p>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <h2>Mis <span>Proyectos</span></h2>
+
+    <div class="card">
+      <h3>Cubiertos Comestibles</h3>
+      <p>Proyecto enfocado en la reducción de plásticos de un solo uso, alineado con los Objetivos de Desarrollo Sostenible (ODS 12, 14 y 15), integrando innovación, sostenibilidad y conciencia ambiental.</p>
+    </div>
+
+    <div class="card">
+      <h3>Topología de Red con Subnetting (Packet Tracer)</h3>
+      <p>Diseño e implementación de una red basada en la dirección 172.16.0.0/16 utilizando VLSM para diferentes tamaños de red (1000, 500, 200 y 100 hosts), simulada en Cisco Packet Tracer.</p>
+    </div>
+
+    <div class="card">
+      <h3>Sistema de Gestión Básico</h3>
+      <p>Aplicación desarrollada como práctica académica para la gestión de usuarios y registros, aplicando lógica de programación, estructuras de datos y buenas prácticas de desarrollo de software.</p>
+    </div>
+  </section>
+
+  <section id="tecnologias">
+  <h2>Tecnologías <span>y Herramientas</span></h2>
+  <div class="card">
+    <p><strong>Lenguajes:</strong> Python, Java, HTML, CSS<br>
+    <strong>Redes:</strong> Cisco Packet Tracer, Subnetting, VLSM<br>
+    <strong>Herramientas:</strong> Git, GitHub, Visual Studio Code<br>
+    <strong>Otros:</strong> Lógica de programación, trabajo en equipo, aprendizaje autónomo</p>
+  </div>
+
+  <div class="card">
+    <h3>Certificaciones</h3>
+    <p><strong>NVIDIA Deep Learning Institute (DLI)</strong><br>
+    Certificación en fundamentos de Deep Learning, redes neuronales y uso de GPU para el entrenamiento de modelos de inteligencia artificial.</p>
+  </div>
+</section>
+
+  <footer>
+    © 2025 Santiago Cárdenas · Ingeniería de Sistemas
+  </footer>
+
+</body>
+</html>
